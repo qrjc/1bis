@@ -1,31 +1,32 @@
+
 @font-face {
-    font-family: 'avenir_lt_std95_black';
-    src: url('avenirltstd-black-webfont.woff2') format('woff2'),
-         url('avenirltstd-black-webfont.woff') format('woff');
+    font-family: 'berthold_akzidenz_grotesk_bRg';
+    src: url('akzidenzgroteskbe-regular-webfont.woff2') format('woff2'),
+         url('akzidenzgroteskbe-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+
+
+
 @font-face {
-    font-family: 'avenirheavy';
-    src: url('avenir_heavy-webfont.woff2') format('woff2'),
-         url('avenir_heavy-webfont.woff') format('woff');
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('akzidenzgrotesk-bold-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'avenir_lt_std45_book';
-    src: url('avenirltstd-book-webfont.woff2') format('woff2'),
-         url('avenirltstd-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
+
+
 @font-face {
-    font-family: 'avenir_lt_std55_roman';
-    src: url('avenirltstd-roman-webfont.woff2') format('woff2'),
-         url('avenirltstd-roman-webfont.woff') format('woff');
+    font-family: 'akzidenz-grotesk_bqmedium';
+    src: url('akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,15 +77,15 @@ main{
 
 
 .num{
-    font-family: avenirheavy;
+    font-family: akzidenz-grotesk_bqmedium;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: 3px;
 }
 .num-down{
-    font-family: avenirheavy;
+    font-family: akzidenz-grotesk_bqmedium;
     font-size: 43px;
-    margin-top: 49px;
+    margin-top: 43px;
 }
 .footer{
     display: flex;
@@ -94,20 +95,20 @@ main{
     animation-fill-mode: forwards;
 }
 p{
-  font-family: avenir_lt_std55_roman;  
+  font-family: berthold_akzidenz_grotesk_bRg;  
   font-size: 14px;
   line-height: 200%;
   opacity: 1;
   animation: p-load 800ms ease-out 2000ms;
   animation-fill-mode: forwards;}
 h3{
-    font-family:avenir_lt_std95_black ;
+    font-family:akzidenz-grotesk_bqmedium ;
     margin-right: 213px;
     display: flex;
     align-items: center;
 }
 .incorrecta{
-    font-family: avenir_lt_std95_black;
+    font-family: akzidenz-grotesk_bqmedium;
     line-height: 200%;
     font-size: 14px;
     margin-left: -3px;
@@ -117,7 +118,7 @@ h3{
 
 }
 .correcta{
-    font-family: avenir_lt_std95_black;
+    font-family: akzidenz-grotesk_bqmedium;
     line-height: 200%;
     font-size: 14px;
     margin-left: -3px;
@@ -143,7 +144,12 @@ ol{
     margin-bottom: 52px;
     margin-left: 164px;
 }
-
+.description{
+    opacity: 0;
+    text-align: center;
+    animation: description 400ms ease-out 5000ms;
+    animation-fill-mode: forwards;
+}
 @keyframes p-load{
     0%{
         
@@ -163,8 +169,21 @@ ol{
     }
     100%{
 
-        transform: translate(34%, -182%);
+        transform: translate(34%, 66%);
         scale: 2
 
+    }
+}
+@keyframes description {
+    0%{
+        opacity: 0;
+        scale:.9;
+        transform: translateY(-225%);
+    }
+
+    100%{
+        opacity: 1;
+        scale: 1;
+        transform: translateY(-230%);
     }
 }
